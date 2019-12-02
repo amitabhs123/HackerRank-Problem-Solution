@@ -1,0 +1,25 @@
+public class Demo1{
+    public static void main(String [] args){
+        Scanner s=new Scanner(System.in);
+        boolean validate =true;
+        int a=0,b=0;
+        int arr1[]=new int[3];
+        int arr2[]=new int[3];
+        for(int x=0;x<3;x++){
+            arr1[x]=s.nextInt();
+        }
+        for(int x=0;x<3;x++){
+            arr2[x]=s.nextInt();
+
+        }
+		/*
+		 * for(int i=0;i<2;i++){ if(arr1[i]>arr2[i]) { a=a+1; //validate=false; } else
+		 * if(arr1[i]<arr2[i]) { b=b+1; //validate=false; } else { // validate=false; }
+		 * 
+		 * } System.out.print(a+" "+b );
+		 */
+      /*  a = ((arr1[0]>arr2[0])?1:0)+ ((arr1[1]>arr2[1])?1:0)+ ((arr1[2]>arr2[2])?1:0) ;
+        b = ((arr1[0]<arr2[0])?1:0)+ ((arr1[1]<arr2[1])?1:0)+ ((arr1[2]<arr2[2])?1:0) ;
+        System.out.println(a+" " +b);
+    }
+}
