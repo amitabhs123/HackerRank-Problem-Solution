@@ -1,0 +1,33 @@
+public class Demo1{
+	public static void main(String [] args) {
+		Scanner s=new Scanner(System.in);
+		//int size=s.nextInt();
+		int small,large,g=0,m=0;
+		int arr[]=new int[5];
+		//System.out.print(arr.length);
+		for(int i=0;i<arr.length;i++) {
+			arr[i]=s.nextInt();
+		}
+		large=small=arr[0];
+		for(int i=0;i<arr.length;i++) {
+			if(small>arr[i])
+				small=arr[i];
+		}
+		for(int i=0;i<arr.length;i++) {
+			if(large<arr[i])
+				large=arr[i];
+		}
+		//System.out.println(small+ " "+ large);
+		for(int i=0;i<arr.length;i++) {
+			if(arr[i]!=large)
+			g=g+arr[i];
+		}
+		System.out.print(g+" ");
+		
+		for(int i=0;i<arr.length;i++) {
+			if(arr[i]!=small)
+			m=m+arr[i];
+		}
+		System.out.print(m);
+	}
+}
