@@ -1,0 +1,19 @@
+public class Demo1 {
+    public static void main(String [] args){
+        Scanner s=new Scanner(System.in);
+        int size=s.nextInt();
+        int arr1[]=new int[size];
+        for(int i=0;i<arr1.length;i++){
+            arr1[i]=s.nextInt();
+        }
+        for(int i=0;i<arr1.length;i++){
+           if(arr1[i]<38)
+        	   System.out.println(arr1[i]);
+           else if((arr1[i]%5)>=3) 
+        	   System.out.println(arr1[i]+(5-arr1[i]%5));
+           
+           else
+           System.out.println(arr1[i]);
+        }
+    }
+}
