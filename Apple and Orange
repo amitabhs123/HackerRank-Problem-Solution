@@ -1,0 +1,54 @@
+public class Demo1{
+	public static void main(String [] args) {
+		Scanner s=new Scanner(System.in);
+		int Count1=0, Count2=0;
+		
+		System.out.print("Distance start of first tree");
+		int tree1=s.nextInt();
+		
+		
+		System.out.print("Distance start of second tree");
+		int tree2=s.nextInt();
+		
+		
+		System.out.print("Distance start of house");
+		int houseStart=s.nextInt();
+		
+		
+		System.out.print("Distance end of house");
+		int houseEnd=s.nextInt();
+		
+		
+		System.out.print("The number of apple in first tree:");
+		int size1=s.nextInt();
+		
+		
+		System.out.print("The number of orange in second tree:");
+		int size2=s.nextInt();
+		int t1[]=new int[size1];
+		int t2[]=new int[size2];
+		
+		
+		System.out.print("Apple throws distance:");
+		for(int i=0;i<t1.length;i++) {
+			t1[i]=s.nextInt();
+			t1[i]=t1[i]+tree1;
+		}
+		System.out.print("Orange throws distance:");
+		for(int i=0;i<t2.length;i++) {
+			t2[i]=s.nextInt();
+			t2[i]=t2[i]+tree2;
+		}
+		for(int i=0;i<t1.length;i++) {
+			
+			if(t1[i]>=houseStart && t1[i]<=houseEnd)
+				Count1++;
+			if( t2[i]>=houseStart && t2[i]<=houseEnd)
+				Count2++;
+		}
+		System.out.println("The no of apple thrown in house :"+ Count1);
+		System.out.println("The no of orange thrown in house :"+ Count2);
+		
+				
+	}
+}
